@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Students</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding-top: 30px;
+        }
+
+        .page-title {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .students-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            justify-items: center;
+        }
+
+        .student-card {
+            background-color: rgb(60, 183, 245);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(101, 100, 100, 0.1);
+            overflow: hidden;
+            width: 250px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .student-photo {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 50px;
+        }
+
+        .student-info h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .student-info p {
+            font-size: 16px;
+            color: #fffefe;
+            margin: 5px 0;
+        }
+
+        .student-rank {
+            font-weight: bold;
+            color: #2d88ff;
+        }
+
+        .student-year {
+            color: #888;
+        }
+
+        /* Mobile responsiveness */
+        @media screen and (max-width: 768px) {
+            .students-grid {
+                grid-template-columns: repeat(2, 1fr); /* 2 items per row on small screens */
+                gap: 20px;
+            }
+
+            .student-card {
+                width: 100%; /* Full width on smaller screens */
+                padding: 15px;
+            }
+
+            .page-title {
+                font-size: 28px; /* Smaller title size on mobile */
+                margin-bottom: 20px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .students-grid {
+                grid-template-columns: 1fr; /* 1 item per row on very small screens */
+                gap: 15px;
+            }
+
+            .page-title {
+                font-size: 24px; /* Even smaller title size on very small screens */
+            }
+
+            .student-card {
+                padding: 10px;
+            }
+
+            .student-photo {
+                margin-bottom: 30px;
+            }
+
+            .student-info h2 {
+                font-size: 18px;
+            }
+
+            .student-info p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">Our Top 10 Students</h1>
+        <div class="students-grid">
+            <div class="student-card">
+                <img src="./successful-mexican-male-student-braces-classroom-university-166448604.webp" alt="Student 1" class="student-photo">
+                <div class="student-info">
+                    <h2 class="student-name">John Doe</h2>
+                    <p class="student-year">Passout Year: 2024</p>
+                    <p class="student-result">Result: A+</p>
+                    <p class="student-rank">Rank: 1</p>
+                </div>
+            </div>
+            <div class="student-card">
+                <img src="./depositphotos_308023420-stock-photo-portrait-cute-young-student-girl.jpg" alt="Student 2" class="student-photo">
+                <div class="student-info">
+                    <h2 class="student-name">Jane Smith</h2>
+                    <p class="student-year">Passout Year: 2024</p>
+                    <p class="student-result">Result: A</p>
+                    <p class="student-rank">Rank: 2</p>
+                </div>
+            </div>
+            <!-- Repeat the student-card structure for remaining students -->
+            <div class="student-card">
+                <img src="./istockphoto-1336063208-612x612.jpg" alt="Student 3" class="student-photo">
+                <div class="student-info">
+                    <h2 class="student-name">Tom Brown</h2>
+                    <p class="student-year">Passout Year: 2024</p>
+                    <p class="student-result">Result: A</p>
+                    <p class="student-rank">Rank: 3</p>
+                </div>
+            </div>
+            <div class="student-card">
+                <img src="./laughing-spanish-female-student-backpack-260nw-1531217237.webp" alt="Student 4" class="student-photo">
+                <div class="student-info">
+                    <h2 class="student-name">Emily White</h2>
+                    <p class="student-year">Passout Year: 2024</p>
+                    <p class="student-result">Result: B+</p>
+                    <p class="student-rank">Rank: 4</p>
+                </div>
+            </div>
+            <div class="student-card">
+                <img src="./student-college-university-260nw-302087705.webp" alt="Student 5" class="student-photo">
+                <div class="student-info">
+                    <h2 class="student-name">Michael Lee</h2>
+                    <p class="student-year">Passout Year: 2024</p>
+                    <p class="student-result">Result: A</p>
+                    <p class="student-rank">Rank: 5</p>
+                </div>
+            </div>
+            <div class="student-card">
+                <img src="./istockphoto-1216286899-612x612.jpg" alt="Student 6" class="student-photo">
+                <div class="student-info">
+                    <h2 class="student-name">Sarah Green</h2>
+                    <p class="student-year">Passout Year: 2024</p>
+                    <p class="student-result">Result: B</p>
+                    <p class="student-rank">Rank: 6</p>
+                </div>
+            </div>
+            <div class="student-card">
+                <img src="/360_F_258558072_I1uEdPquzFzDiXbLz2F9j11p6KoVckHk.jpg" alt="Student 7" class="student-photo">
+                <div class="student-info">
+                    <h2 class="student-name">David King</h2>
+                    <p class="student-year">Passout Year: 2024</p>
+                    <p class="student-result">Result: A</p>
+                    <p class="student-rank">Rank: 7</p>
+                </div>
+            </div>
+            <div class="student-card">
+                <img src="/female-college-student-25909315.webp" alt="Student 8" class="student-photo">
+                <div class="student-info">
+                    <h2 class="student-name">Laura Harris</h2>
+                    <p class="student-year">Passout Year: 2024</p>
+                    <p class="student-result">Result: A+</p>
+                    <p class="student-rank">Rank: 8</p>
+                </div>
+            </div>
+            <div class="student-card">
+                <img src="/images.jpg" alt="Student 9" class="student-photo">
+                <div class="student-info">
+                    <h2 class="student-name">Chris Evans</h2>
+                    <p class="student-year">Passout Year: 2024</p>
+                    <p class="student-result">Result: B+</p>
+                    <p class="student-rank">Rank: 9</p>
+                </div>
+            </div>
+            <div class="student-card">
+                <img src="/images (1).jpg" alt="Student 10" class="student-photo">
+                <div class="student-info">
+                    <h2 class="student-name">Alice Young</h2>
+                    <p class="student-year">Passout Year: 2024</p>
+                    <p class="student-result">Result: B</p>
+                    <p class="student-rank">Rank: 10</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
